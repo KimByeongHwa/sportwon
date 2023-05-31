@@ -28,10 +28,10 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
     "no-useless-catch": "off", // 불필요한 catch 못쓰게 하는 기능 끔
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
-    "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-unused-vars": "off",
-    "import/prefer-default-export": "off",
-    "import/no-mutable-exports": "off",
-    "no-underscore-dangle": "off"
+    "@typescript-eslint/no-use-before-define": "off", // styled-compontes 맨 아래 선언 위해 추가
+    "@typescript-eslint/no-unused-vars": "off", // mongoDB databse.js 파일 오류 해결 위해 추가
+    "import/prefer-default-export": "off", // mongoDB databse.js 파일 오류 해결 위해 추가
+    "import/no-mutable-exports": "off", // mongoDB databse.js 파일 오류 해결 위해 추가
+    "no-underscore-dangle": "off" // mongoDB databse.js 파일 오류 해결 위해 추가
   }
 }
