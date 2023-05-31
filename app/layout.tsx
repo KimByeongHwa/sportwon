@@ -2,7 +2,7 @@
 
 import './globals.css'
 import { Inter } from 'next/font/google'
-import styled from 'styled-components'
+import Header from './Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +20,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-const Header = styled.div`
-  background-color: #f1f3f5;
-  height: 8rem;
-`

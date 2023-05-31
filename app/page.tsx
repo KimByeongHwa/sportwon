@@ -1,3 +1,21 @@
-export default function Home() {
-  return <div>랜딩페이지</div>
+'use client'
+
+import React from 'react'
+import styled from 'styled-components'
+import Inner from '@/styles/Inner'
+import Banner from './Banner'
+
+function Home() {
+  return (
+    <Container>
+      <Banner />
+      <Inner>Home</Inner>
+    </Container>
+  )
 }
+
+const Container = styled.div`
+  width: 100%;
+`
+
+export default Home

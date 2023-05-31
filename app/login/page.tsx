@@ -1,14 +1,19 @@
 'use client'
 
 import React from 'react'
+import Inner from '@/styles/Inner'
 import styled from 'styled-components'
 
 function Login() {
-  return <Container>로그인 페이지</Container>
+  return (
+    <Container>
+      <Inner>로그인 페이지</Inner>
+    </Container>
+  )
 }
 
 const Container = styled.div`
-  border: 1px solid black;
+  width: 100%;
 `
 
 export default Login
