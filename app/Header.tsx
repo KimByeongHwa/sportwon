@@ -1,15 +1,15 @@
 import React from 'react'
-import Inner from '@/styles/Inner'
 import styled from 'styled-components'
 import Link from 'next/link'
+import Inner from '@/styles/Inner'
 
 function Header() {
   return (
     <Container>
       <Inner>
         <Link href="/">Home</Link>
-        <Link href="/signup">회원가입</Link>
         <Link href="/login">로그인</Link>
+        <Link href="/signup">회원가입</Link>
       </Inner>
     </Container>
   )

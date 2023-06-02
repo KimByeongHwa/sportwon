@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import Inner from '@/styles/Inner'
 import styled from 'styled-components'
+import Inner from '@/styles/Inner'
 
 function Login() {
   return (

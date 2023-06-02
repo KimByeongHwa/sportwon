@@ -8,8 +8,10 @@ import Banner from './Banner'
 function Home() {
   return (
     <Container>
-      <Banner />
-      <Inner>Home</Inner>
+      <Inner>
+        <Banner />
+        Home
+      </Inner>
     </Container>
   )
 }

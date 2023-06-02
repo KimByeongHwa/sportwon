@@ -27,7 +27,7 @@
     // 경고표시, 파일 확장자를 .ts나 .tsx 모두 허용함
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
     "no-useless-catch": "off", // 불필요한 catch 못쓰게 하는 기능 끔
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": ["error", { "endOfLine": "auto", "useTabs": "false" }],
     "@typescript-eslint/no-use-before-define": "off", // styled-compontes 맨 아래 선언 위해 추가
     "@typescript-eslint/no-unused-vars": "off", // mongoDB databse.js 파일 오류 해결 위해 추가
     "import/prefer-default-export": "off", // mongoDB databse.js 파일 오류 해결 위해 추가

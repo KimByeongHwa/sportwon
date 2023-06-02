@@ -10,6 +10,9 @@ const Wrapper = styled.div`
   height: 28rem;
   background-image: url('banner.jpg');
   background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  margin: 2rem 0;
 `
 
 export default Banner
