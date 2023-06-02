@@ -11,7 +11,7 @@ function SignUp() {
     <Container>
       <Inner>
         <Title>회원가입</Title>
-        <Form>
+        <Form method="POST" action="/api/signup/new">
           <Line>
             <List>아이디</List>
             <CustomInput />
@@ -25,7 +25,7 @@ function SignUp() {
             <CustomInput />
           </Line>
           <ButtonWrapper>
-            <CustomButton outline>가입하기</CustomButton>
+            <CustomButton type="submit">가입하기</CustomButton>
           </ButtonWrapper>
         </Form>
       </Inner>
@@ -44,7 +44,7 @@ const Title = styled.div`
   font-weight: 500;
 `
 
-const Form = styled.div``
+const Form = styled.form``
 
 const Line = styled.div`
   display: flex;

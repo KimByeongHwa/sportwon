@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Inner from '@/styles/Inner'
+import Inner from '../../styles/Inner'
 
 function Login() {
   return (

@@ -6,6 +6,7 @@ interface ButtonProps {
   color?: string
   background?: string
   outline?: boolean
+  type?: 'button' | 'submit' | 'reset'
 }
 
 function CustomButton({
@@ -13,10 +14,16 @@ function CustomButton({
   color,
   background,
   outline,
+  type,
 }: ButtonProps): ReactElement {
   return (
     <div>
-      <StyledButton color={color} background={background} outline={outline}>
+      <StyledButton
+        color={color}
+        background={background}
+        outline={outline}
+        type={type}
+      >
         {children}
       </StyledButton>
     </div>
@@ -26,7 +33,8 @@ function CustomButton({
 CustomButton.defaultProps = {
   color: '#333',
   background: 'white',
-  outline: 'false',
+  outline: false,
+  type: 'button',
 }
 
 const StyledButton = styled.button<ButtonProps>`
