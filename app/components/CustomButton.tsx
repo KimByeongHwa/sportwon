@@ -15,12 +15,18 @@ function CustomButton({
   outline,
 }: ButtonProps): ReactElement {
   return (
-    <>
+    <div>
       <StyledButton color={color} background={background} outline={outline}>
         {children}
       </StyledButton>
-    </>
+    </div>
   )
+}
+
+CustomButton.defaultProps = {
+  color: '#333',
+  background: 'white',
+  outline: 'false',
 }
 
 const StyledButton = styled.button<ButtonProps>`
@@ -32,8 +38,8 @@ const StyledButton = styled.button<ButtonProps>`
   font-size: 1.2rem;
   padding: 0.6rem 0.8rem;
 
-  color: ${(props) => props.color || '#333'};
-  background: ${(props) => props.background || 'white'};
+  color: ${(props) => props.color};
+  background: ${(props) => props.background};
 
   ${(props) =>
     props.outline &&

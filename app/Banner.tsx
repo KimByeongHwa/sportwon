@@ -2,7 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Banner() {
-  return <Wrapper />
+  return (
+    <div>
+      <Wrapper />
+    </div>
+  )
 }
 
 const Wrapper = styled.div`
